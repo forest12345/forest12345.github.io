@@ -4,9 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="linux笔记, Siberrian Husky">
-    <meta name="description" content="wc����  ����ͳ��ָ���ı�������(-l)������(-w)���ֽ���(-c)
-date����  %H ��ʮ��Сʱ����ʾʱ��  %I ʮ��Сʱ����ʾʱ��  %M  %S  %j ��ʾ����ĵ">
+    <meta name="keywords" content="笔记1, Siberrian Husky">
+    <meta name="description" content="ִ��service network restart������������Ĵ���Restarting network (via systemctl) Job for network.service failed because the ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +13,7 @@ date����  %H ��ʮ��Сʱ����ʾʱ��  %I ʮ��Сʱ�
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>linux笔记 | Siberrian Husky</title>
+    <title>笔记1 | Siberrian Husky</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -286,13 +285,13 @@ date����  %H ��ʮ��Сʱ����ʾʱ��  %I ʮ��Сʱ�
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        linux笔记
+                        笔记1
                     </div>
                 </div>
             </div>
@@ -430,16 +429,7 @@ date����  %H ��ʮ��Сʱ����ʾʱ��  %I ʮ��Сʱ�
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>wc����<br>  ����ͳ��ָ���ı�������(-l)������(-w)���ֽ���(-c)</p>
-<p>date����<br>  %H ��ʮ��Сʱ����ʾʱ��<br>  %I ʮ��Сʱ����ʾʱ��<br>  %M<br>  %S<br>  %j ��ʾ����ĵڼ���<br>  -s �޸�ϵͳʱ��</p>
-<p>history����<br>  -c �����ʷ��¼<br>  ������    �ظ�ִ�и�����</p>
-<p>free����<br>  ����ڴ�ʹ����</p>
-<p>cut����</p>
-<p>touch����</p>
-<p>mkdir����</p>
-<p>tar����<br>�հ��ļ�����ѹ�����������</p>
-<p>����&lt;�ļ�         ���ļ���Ϊ����ı�׼����<br>����&lt;&lt;�ļ�       �ӱ�׼�����ж��룬ֱ�������ֽ��ֹͣ<br>#������</p>
-<p>ִ��service network restart������������Ĵ���<br>Restarting network (via systemctl): Job for network.service failed because the control process exited with error code.<br>See “systemctl status network.service” and “journalctl -xe” for details. [ʧ��]<br>���������У�<br>1.network���������������ȱ�֤/etc/sysconfig/network-scriptsĿ¼�µ�ifcfg-xxx��ÿ̨������һ����ͬ��<br>û�д��������Ķ����Ļ���������Ĵ���ָ���ڸ��Ĺ�������Ϊ�����ô���ĸ֮��ġ�<br>2.�� NetworkManager �����г�ͻ������ý����ֱ�ӹر� NetworkManger ����ͺ��ˣ�<br> service NetworkManager stop�����ҽ�ֹ�������� chkconfig NetworkManager off ��֮�������ͺ��ˡ�<br>3.�������ļ���MAC��ַ��ƥ�䣬���Ҳ�ý����ʹ��ip addr����ifconfig���鿴mac��ַ<br>4.�趨��������һ����ΪNetworkManager-wait-online��������Ϊ��<br>systemctl enable NetworkManager-wait-online.service<br>5.�鿴/etc/sysconfig/network-scripts�£��������޹ص�����λ���ļ�ȫɾ�������ⲻ��Ҫ��Ӱ�죬<br>��ֻ��һ����ifcfg��ͷ���ļ���������һ��Ӧ��ʹ��ip addr����鿴ip�ڶ�����ͷ������һ��<br>6.��ifcfg-xxx�ļ��е�DEVICEһ��ע�͵���<br>��ifcfg-xxx�е�NAME��Ϊ���ļ���һ�¡�<br>��VMWare�ı༭-��������༭���н�����ģʽ��Ϊ�Žӡ�<br>��VMWare���½ǵ������������Ƿ����ӣ����û�������������ϡ�<br>���䣺�������������-���ã���NATģʽ��Ϊ�Ž����ԣ��ҵĸ�Ϊ�ŽӺ��������network�����˵����ϲ�������<br>�����������ٽ��Ž�ģʽ��ΪNATģʽ�����ּȿ��������ֿ�������network�����ˣ�<br>�鿴���������û�н�����VMware DHCP service��VMware NAT service �⼸��vm�����������������<br>�����ĳ��˾�̬ip�����˽�BOOTPROTO��Ϊstatic��<br>7.������϶�û�н�����������һ��– ���� ��һ����û���漣��������</p>
+                <p>ִ��service network restart������������Ĵ���<br>Restarting network (via systemctl) Job for network.service failed because the control process exited with error code.<br>See systemctl status network.service and journalctl -xe for details. [ʧ��]<br>���������У�<br>1.network���������������ȱ�֤etcsysconfignetwork-scriptsĿ¼�µ�ifcfg-xxx��ÿ̨������һ����ͬ��<br>û�д��������Ķ����Ļ���������Ĵ���ָ���ڸ��Ĺ�������Ϊ�����ô���ĸ֮��ġ�<br>2.�� NetworkManager �����г�ͻ������ý����ֱ�ӹر� NetworkManger ����ͺ��ˣ�<br> service NetworkManager stop�����ҽ�ֹ�������� chkconfig NetworkManager off ��֮�������ͺ��ˡ�<br>3.�������ļ���MAC��ַ��ƥ�䣬���Ҳ�ý����ʹ��ip addr����ifconfig���鿴mac��ַ<br>4.�趨��������һ����ΪNetworkManager-wait-online��������Ϊ��<br>systemctl enable NetworkManager-wait-online.service<br>5.�鿴etcsysconfignetwork-scripts�£��������޹ص�����λ���ļ�ȫɾ�������ⲻ��Ҫ��Ӱ�죬<br>��ֻ��һ����ifcfg��ͷ���ļ���������һ��Ӧ��ʹ��ip addr����鿴ip�ڶ�����ͷ������һ��<br>6.��ifcfg-xxx�ļ��е�DEVICEһ��ע�͵���<br>��ifcfg-xxx�е�NAME��Ϊ���ļ���һ�¡�<br>��VMWare�ı༭-��������༭���н�����ģʽ��Ϊ�Žӡ�<br>��VMWare���½ǵ������������Ƿ����ӣ����û�������������ϡ�<br>���䣺�������������-���ã���NATģʽ��Ϊ�Ž����ԣ��ҵĸ�Ϊ�ŽӺ��������network�����˵����ϲ�������<br>�����������ٽ��Ž�ģʽ��ΪNATģʽ�����ּȿ��������ֿ�������network�����ˣ�<br>�鿴���������û�н�����VMware DHCP service��VMware NAT service �⼸��vm�����������������<br>�����ĳ��˾�̬ip�����˽�BOOTPROTO��Ϊstatic��<br>7.������϶�û�н�����������һ��– ���� ��һ����û���漣��������</p>
 
             </div>
             <hr/>
@@ -474,9 +464,9 @@ date����  %H ��ʮ��Сʱ����ʾʱ��  %I ʮ��Сʱ�
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《linux笔记》
+                    《笔记1》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/11/06/linux-bi-ji/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/11/06/bi-ji-1/" property="cc:attributionName"
                rel="cc:attributionURL">
                 cyn
             </a> 采用
@@ -516,9 +506,10 @@ date����  %H ��ʮ��Сʱ����ʾʱ��  %I ʮ��Сʱ�
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2019/11/06/bi-ji-1/">
                     <div class="card-image">
@@ -536,9 +527,9 @@ date����  %H ��ʮ��Сʱ����ʾʱ��  %I ʮ��Сʱ�
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-11-06
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-11-06
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-user fa-fw"></i>
@@ -547,6 +538,7 @@ date����  %H ��ʮ��Сʱ����ʾʱ��  %I ʮ��Сʱ�
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -557,24 +549,25 @@ date����  %H ��ʮ��Сʱ����ʾʱ��  %I ʮ��Сʱ�
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/10/18/hello-world/">
+                <a href="/2019/11/06/linux-bi-ji/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="linux笔记">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">linux笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            wc����  ����ͳ��ָ���ı�������(-l)������(-w)���ֽ���(-c)
+date����  %H ��ʮ��Сʱ����ʾʱ��  %I ʮ��Сʱ����ʾʱ��  %M  %S  %j ��ʾ����ĵ
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-18
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-11-06
                             </span>
                         <span class="publish-author">
                             
