@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>linux笔记</title>
+      <link href="/2019/11/06/linux-bi-ji/"/>
+      <url>/2019/11/06/linux-bi-ji/</url>
+      
+        <content type="html"><![CDATA[<p>wc����<br>  ����ͳ��ָ���ı�������(-l)������(-w)���ֽ���(-c)</p><p>date����<br>  %H ��ʮ��Сʱ����ʾʱ��<br>  %I ʮ��Сʱ����ʾʱ��<br>  %M<br>  %S<br>  %j ��ʾ����ĵڼ���<br>  -s �޸�ϵͳʱ��</p><p>history����<br>  -c �����ʷ��¼<br>  ������    �ظ�ִ�и�����</p><p>free����<br>  ����ڴ�ʹ����</p><p>cut����</p><p>touch����</p><p>mkdir����</p><p>tar����<br>�հ��ļ�����ѹ�����������</p><p>����&lt;�ļ�         ���ļ���Ϊ����ı�׼����<br>����&lt;&lt;�ļ�       �ӱ�׼�����ж��룬ֱ�������ֽ��ֹͣ<br>#������</p><p>ִ��service network restart������������Ĵ���<br>Restarting network (via systemctl): Job for network.service failed because the control process exited with error code.<br>See “systemctl status network.service” and “journalctl -xe” for details. [ʧ��]<br>���������У�<br>1.network���������������ȱ�֤/etc/sysconfig/network-scriptsĿ¼�µ�ifcfg-xxx��ÿ̨������һ����ͬ��<br>û�д��������Ķ����Ļ���������Ĵ���ָ���ڸ��Ĺ�������Ϊ�����ô���ĸ֮��ġ�<br>2.�� NetworkManager �����г�ͻ������ý����ֱ�ӹر� NetworkManger ����ͺ��ˣ�<br> service NetworkManager stop�����ҽ�ֹ�������� chkconfig NetworkManager off ��֮�������ͺ��ˡ�<br>3.�������ļ���MAC��ַ��ƥ�䣬���Ҳ�ý����ʹ��ip addr����ifconfig���鿴mac��ַ<br>4.�趨��������һ����ΪNetworkManager-wait-online��������Ϊ��<br>systemctl enable NetworkManager-wait-online.service<br>5.�鿴/etc/sysconfig/network-scripts�£��������޹ص�����λ���ļ�ȫɾ�������ⲻ��Ҫ��Ӱ�죬<br>��ֻ��һ����ifcfg��ͷ���ļ���������һ��Ӧ��ʹ��ip addr����鿴ip�ڶ�����ͷ������һ��<br>6.��ifcfg-xxx�ļ��е�DEVICEһ��ע�͵���<br>��ifcfg-xxx�е�NAME��Ϊ���ļ���һ�¡�<br>��VMWare�ı༭-��������༭���н�����ģʽ��Ϊ�Žӡ�<br>��VMWare���½ǵ������������Ƿ����ӣ����û�������������ϡ�<br>���䣺�������������-���ã���NATģʽ��Ϊ�Ž����ԣ��ҵĸ�Ϊ�ŽӺ��������network�����˵����ϲ�������<br>�����������ٽ��Ž�ģʽ��ΪNATģʽ�����ּȿ��������ֿ�������network�����ˣ�<br>�鿴���������û�н�����VMware DHCP service��VMware NAT service �⼸��vm�����������������<br>�����ĳ��˾�̬ip�����˽�BOOTPROTO��Ϊstatic��<br>7.������϶�û�н�����������һ��– ���� ��һ����û���漣��������</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2019/10/18/hello-world/"/>
       <url>/2019/10/18/hello-world/</url>
